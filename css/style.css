@@ -43,6 +43,12 @@ strong
     font-weight: 400;
 }
 
+p
+{
+    line-height: 14px;
+    margin:0;
+    padding: 10px;
+}
 @media screen and (max-width:768px) {
     body {
     display: flex;
@@ -144,7 +150,6 @@ nav
     .button
     {
         display: flex;
-        flex-direction: center;
         width: 50%;
         
     }
@@ -182,7 +187,6 @@ nav
     .button
     {
         display: flex;
-        flex-direction: center;
         width: 50%;
         
     }
@@ -269,7 +273,7 @@ header
     }
 
     .search-bar {
-        padding: 19px auto;
+        padding: 19px 0;
         display: flex;
         flex-grow: 1;
     }
@@ -313,7 +317,6 @@ header
     display:flex;
     align-items:center;
     height:50px;
-    width:0 auto;
     color:#0065fc;
 
     border:1px #D9D9D9 solid; 
@@ -411,19 +414,21 @@ section
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 30px;
     width: 100%;
+    padding: 0 30px;
 }
 
 @media screen and (max-width:768px) {
     section {
-        padding: 20px 30px;
+        border-radius: 0;
+        padding: 0;
     }
 }
 
 @media screen and (max-width:992px) {
     section {
-        padding: 20px 30px;
+        border-radius: 0;
+        padding: 0;
     }
 }
 
@@ -442,7 +447,7 @@ section
 {
     font-size: 20px;
     font-weight:600;
-    padding: 20px 0;
+    padding: 0 30px;
 }
 
 .article-all-cards
@@ -457,10 +462,11 @@ section
     display: flex;
     flex-direction: column;
 
-    border:3px #F2F2F2 solid;
+    border: 5px #FFF solid;
     border-radius:20px;
+    Background-color:#FFF;
 
-    box-shadow: 0 0 7px #B3B3B3;
+    box-shadow: 0 0 20px #d3d3d3;
 
     margin: 10px;
     max-width: 30%;
@@ -471,17 +477,16 @@ section
     cursor: pointer;
     transition: all 60ms ease-in;
     transform: scale(1.05);
-    box-shadow: 0px 0px 20px #b3b3b3;
+    box-shadow: 0 0 20px #d3d3d3;
 }
 
 .card-image
 {
     overflow: hidden;
     max-width: 260px;
-    max-height: 160px;
+    max-height: 125px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    border:2px #F2F2F2 solid;
 
 }
 
@@ -523,6 +528,7 @@ section
      display: flex;
     align-items:flex-end;
     font-weight: 600;
+    padding: 20px 50px;
  }
 
  @media screen and (max-width:992px) {
@@ -535,6 +541,8 @@ section
     .article-block {
         width: 100%;
         padding: 30px 0;
+        background-color: #FFF;
+        border-radius: 0px;
     }
 
     .article-all-cards
@@ -542,10 +550,12 @@ section
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 0 30px;
     }
+
     .article-title {
         margin: 0;
-        padding: 20px 0;
+        padding: 20px 30px;
     }
 }
 
@@ -558,11 +568,13 @@ section
         width: 100%;
         height: 100%;
         padding: 30px 0;
+        background-color: #FFF;
+        border-radius: 0px;
     }
 
     .article-title {
         margin: 0;
-        padding: 20px 0;
+        padding: 20px 40px;
     }
 
     .article-all-cards {
@@ -579,11 +591,8 @@ section
         max-width: 100%;
 
         border-radius:20px;
-        box-shadow: none;
-        border: none;
-
-        margin: 0;
-        padding:10px 0 ;
+        border: 5px #FFF solid;
+        box-shadow: 0 0 20px #d3d3d3;
     }
 
     .card-image {
@@ -600,7 +609,7 @@ section
 
     .plus {
         padding: 0;
-        margin: 0;
+        margin: 20px 40px;
     }    
  }
 
@@ -619,6 +628,7 @@ aside
     flex-direction: column;
     width:100%;
     height:625px;
+    padding: 0 15px;
 
     border-radius:20px;
     background-color: #F2F2F2;
@@ -647,11 +657,12 @@ aside
     height: 100%;
     
     border-radius: 20px;
-    border:2px #F2F2F2 solid;
+    border: 5px #FFF solid;
+    background-color: #FFF;
 
     margin-bottom:30px;
 
-    box-shadow: 0 0 7px #B3B3B3;
+    box-shadow: 0 0 20px #D3D3D3;
 }
 
 .aside-card-image
@@ -661,7 +672,6 @@ aside
     min-width: 40%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    border:2px #F2F2F2 solid;
 }
 
 .aside-card-image > img
@@ -709,8 +719,9 @@ aside
     flex-direction: column;
     width:100%;
     height:625px;
+    padding: 0 30px;
 
-    border-radius:20px;
+    border-radius: 0;
     background-color: #F2F2F2;
     }
 
@@ -734,6 +745,7 @@ aside
     .aside-block {
         margin: 0;
         width: 100%;
+        padding: 0 30px;
     }
 
     .aside-top-block {
@@ -745,7 +757,6 @@ aside
     
     .aside-block-card {
         width: 100%;
-        margin: 10px 0;
     }
 }
 
@@ -782,6 +793,8 @@ aside
     height:400px;
     cursor: pointer;
     margin: 0 10px 0 0;
+    box-shadow: 0 0 5px #d3d3d3;
+    border-radius: 20px;
 }
 
 .card
@@ -795,16 +808,15 @@ aside
 .card-1
 {
     height:185px;
-
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #d3d3d3;
 }
 
 .card-2
 {
     height:140px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #d3d3d3;
 }
 
 .activity-card-smalls
@@ -814,6 +826,7 @@ aside
     flex-direction: column;
     justify-content: space-between;
     margin: 0 10px 0 0;
+    border-radius: 20px;
 
     cursor: pointer;
 }
@@ -835,14 +848,14 @@ aside
 
 .activity-card-text
 {
-    height: 50px;
     width: 100%;
 
     font-weight: 600;
-    padding: 0 20px 0 20px;
 
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+
+    box-shadow: 0 0 5px #d3d3d3;
 }
 
 
@@ -855,7 +868,7 @@ aside
     .activity {
         display: flex;
         flex-direction: column;
-        padding: 20px 30px;
+        padding: 20px 20px 20px 30px;
     }
 
     .activity-block {
@@ -868,8 +881,8 @@ aside
         width: 100%;
         max-width: 100%;
         height: 100%;
-        padding:20px 0;
-        margin: 0;
+        padding:0;
+        margin-bottom: 20px;
     }
 
     .activity-card-smalls {
@@ -884,23 +897,21 @@ aside
     .card {
         height: 100%;
         width:100%;
-        padding:20px 0;
-        margin: 0;
+        margin-bottom: 20px;
         padding: 0;
     }
 
     .card-1 {
         height: 100%;
         width:100%;
-        padding:20px 0;
-        margin: 0;
+        margin-bottom: 20px;
     }    
 
     .card-2 {
         height: 100%;
         width:100%;
-        padding:20px 0;
-        margin: 0;
+        margin-bottom: 20px;
+
     }    
 
     .activity-card-text {
