@@ -65,7 +65,7 @@ p
     width: 100%;
     max-width: 1440px;
     }
-    section {
+    article {
     width: 100%;
     max-width: 1440px;
     }
@@ -409,7 +409,7 @@ header
     }
 }
                                         /* Section */
-section
+article
 {
     display: flex;
     flex-wrap: wrap;
@@ -419,14 +419,14 @@ section
 }
 
 @media screen and (max-width:768px) {
-    section {
+    article {
         border-radius: 0;
         padding: 0;
     }
 }
 
 @media screen and (max-width:992px) {
-    section {
+    article {
         border-radius: 0;
         padding: 0;
     }
@@ -532,7 +532,7 @@ section
  }
 
  @media screen and (max-width:992px) {
-    section {
+    article {
         display: flex;
         justify-content: flex-end;
         flex-direction: column-reverse;
@@ -736,7 +736,7 @@ aside
     aside {
         width: 100%;
     }
-    section {
+    article {
         display: flex;
         justify-content: flex-end;
         flex-direction: column-reverse;
@@ -928,6 +928,7 @@ aside
 footer
 {
     background-color: #F2F2F2;
+    margin-top: 20px;
 }
 
 .footer-block
@@ -936,7 +937,6 @@ footer
     display:flex;
     flex-direction:row;
     padding: 50px 30px 50px 30px;
-    
 }
 
 .footer-unit
@@ -960,13 +960,11 @@ footer
 @media screen and (max-width:992px) {
     footer {
         width: 100%;
-        padding: 50px 30px;
     }
 
     .footer-block {
         display: flex;
         flex-direction: row;
-        padding: 20px 0;
     }
 
     .footer-unit
@@ -981,14 +979,12 @@ footer
 @media screen and (max-width:768px) {
     footer {
         width: 100%;
-        padding: 30px 30px;
     }
     
     .footer-block 
     {
         display: flex;
         flex-direction: column;
-        padding: 0;
     }
     .footer-unit
     {
